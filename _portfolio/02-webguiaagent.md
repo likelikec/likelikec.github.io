@@ -2,6 +2,7 @@
 title: "WebGUIAgent · 轻量 Web GUI Agent"
 excerpt: "接收网页任务 JSON，用 Playwright 驱动 Chromium，通过多角色模型链路观察、规划、定位、执行并校验，最终产出可复盘的测试报告与逐步运行产物。<br/><span class='muted'>A lightweight web GUI agent with a multi-role model chain and replayable run artifacts.</span><br/><a href='https://github.com/likelikec/WebGUIAgent'>github.com/likelikec/WebGUIAgent</a>"
 collection: portfolio
+permalink: /projects/webguiaagent/
 order: 2
 ---
 

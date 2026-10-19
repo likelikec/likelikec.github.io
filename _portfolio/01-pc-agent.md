@@ -2,6 +2,7 @@
 title: "PC-Agent · 桌面 GUI 测试 Agent"
 excerpt: "纯视觉的桌面 GUI 自动化测试执行 agent：整屏截图 → 视觉语言模型规划与元素定位 → 真实鼠标键盘事件 → 可读测试报告（HTML / Excel / 截图轨迹 / GIF）。<br/><span class='muted'>Vision-only desktop GUI test agent that drives a native app and emits auditable reports.</span><br/><a href='https://github.com/likelikec/PC-Agent'>github.com/likelikec/PC-Agent</a>"
 collection: portfolio
+permalink: /projects/pc-agent/
 order: 1
 ---
 

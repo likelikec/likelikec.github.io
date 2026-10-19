@@ -2,6 +2,7 @@
 title: "软著材料生成 Skill"
 excerpt: "从真实软件项目生成并校验中国计算机软件著作权登记材料（代码鉴别材料、申请表信息、用户手册、软件设计说明书），流程内设分阶段人工确认。<br/><span class='muted'>An agent skill that drafts and validates Chinese software copyright registration materials from a real codebase.</span><br/><a href='https://github.com/likelikec/software-copyright-materials-skill'>github.com/likelikec/software-copyright-materials-skill</a>"
 collection: portfolio
+permalink: /projects/copyright-skill/
 order: 7
 ---
 

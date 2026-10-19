@@ -2,6 +2,7 @@
 title: "AI4arXiv · 论文情报聚合"
 excerpt: "每个工作日自动抓取 arXiv「系统 / 软件工程 / 安全」方向的新论文与修订，按关键词、LLM 相关性、历史反馈打分分档；高价值论文生成五段式精读与经程序核验的原文证据。<br/><span class='muted'>A zero-server arXiv digest pipeline: fetch, score, deep-read, verify evidence, publish.</span><br/><a href='https://github.com/likelikec/ai4arxiv'>github.com/likelikec/ai4arxiv</a>"
 collection: portfolio
+permalink: /projects/ai4arxiv/
 order: 6
 ---
 

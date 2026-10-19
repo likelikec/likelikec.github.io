@@ -2,6 +2,7 @@
 title: "CoGUI · 人机协同的移动端 GUI 自动化"
 excerpt: "在 AndroidWorld 任务集上比较无介入、高层介入、低层介入、混合介入四种人机协同模式的执行框架，支持多模拟器并行与断点续跑。<br/><span class='muted'>A human-in-the-loop framework comparing four intervention modes on AndroidWorld.</span><br/><a href='https://github.com/likelikec/CoGUI'>github.com/likelikec/CoGUI</a>"
 collection: portfolio
+permalink: /projects/cogui/
 order: 4
 ---
 

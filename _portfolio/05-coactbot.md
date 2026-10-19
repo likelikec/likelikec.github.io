@@ -2,6 +2,7 @@
 title: "CoactBot · 轨迹感知自我纠正的移动作业台"
 excerpt: "人在回路的移动 GUI 自动化：以轨迹为单位的自我纠正机制，配合 React 工作台观察与接管 agent 的每一步。<br/><span class='muted'>Human-in-the-loop mobile GUI automation with trajectory-aware self-correction.</span><br/><a href='https://github.com/likelikec/CoactBot'>github.com/likelikec/CoactBot</a>"
 collection: portfolio
+permalink: /projects/coactbot/
 order: 5
 ---
 

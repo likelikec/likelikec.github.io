@@ -314,6 +314,7 @@ zh: &DEFAULT_ZH
   loading_label              : "加载中..."
 zh-CN:
   <<: *DEFAULT_ZH
+  feed_label                 : "RSS 订阅"
 
 # Chinese (traditional)
 # -----------------
