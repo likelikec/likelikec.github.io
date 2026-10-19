@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "项目 Projects"
+permalink: /projects/
+author_profile: true
+---
+
+主要在做 GUI Agent 与智能软件测试：移动端、桌面、Web 三条执行链路，以及围绕它们的评测、干预和工具链。
+
+<p class="muted">GUI agents and intelligent software testing — mobile, desktop and web, plus the tooling around evaluation and human intervention.</p>
+
+<hr />
+
+{% assign items = site.portfolio | sort: 'order' %}
+{% for post in items %}
+  {% include archive-single.html %}
+{% endfor %}

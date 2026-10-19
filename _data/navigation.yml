@@ -1,0 +1,15 @@
+# 顶部导航栏。调整顺序即调整链接顺序；删掉一项即从导航栏移除（页面本身仍在）。
+# 如果某个页面还没内容，先把它注释掉，避免点进去是空页。
+
+main:
+  - title: "主页 Home"
+    url: /
+
+  - title: "项目 Projects"
+    url: /projects/
+
+  - title: "论文 Publications"
+    url: /publications/
+
+  # - title: "CV 简历"
+  #   url: /cv/

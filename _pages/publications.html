@@ -1,0 +1,62 @@
+---
+layout: archive
+title: "论文 Publications"
+permalink: /publications/
+author_profile: true
+---
+
+<p class="muted">论文列表整理中：预印本与在投稿件会陆续补到这里。<br/>Publication list is being assembled — preprints and submissions will be listed here.</p>
+
+<p class="muted">README 里提到的在研工作可通过 <a href="/projects/">项目页 Projects</a> 先了解。</p>
+
+<hr />
+
+{% comment %}
+怎么加一篇论文（示例）：
+1. 在 _publications/ 下新建文件，例如 _publications/2026-01-01-cogui.md
+2. front matter 参考：
+
+---
+title: "Your Paper Title"
+collection: publications
+category: conferences   # books / manuscripts / conferences，对应 _config.yml 的 publication_category
+permalink: /publication/2026-01-01-cogui
+excerpt: '一句话概括这篇工作。'
+date: 2026-01-01
+venue: 'Proceedings of XXX'
+paperurl: 'https://example.com/paper.pdf'
+citation: 'Your Name, et al. (2026). &quot;Your Paper Title.&quot; <i>Proceedings of XXX</i>.'
+---
+
+3. 正文写摘要或补充说明即可，列表页只显示 title / venue / 年份 / excerpt。
+{% endcomment %}
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
+
+

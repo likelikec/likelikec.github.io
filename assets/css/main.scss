@@ -1,0 +1,128 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv"
+;
+
+/* ------------------------------------------------------------------
+   自定义样式（双语首页 / 项目页）
+   直接改这里即可，不需要动 _sass 里的主题文件
+------------------------------------------------------------------ */
+
+.lang-switch {
+  font-size: 0.78em;
+  letter-spacing: 0.03em;
+  color: #8a8a8a;
+  margin: -0.4em 0 1.4em;
+}
+
+.lang-switch a {
+  color: #7a8288;
+  text-decoration: none;
+  border-bottom: 1px dotted #bdc1c4;
+}
+
+.lang-switch a:hover {
+  color: #4a8bb5;
+  border-bottom-color: #4a8bb5;
+}
+
+.lang-switch .on {
+  font-weight: 700;
+  color: #3d4144;
+}
+
+.lang-switch .sep {
+  margin: 0 0.5em;
+  opacity: 0.45;
+}
+
+.muted {
+  color: #7a8288;
+  font-size: 0.9em;
+}
+
+.page__content .muted a {
+  color: inherit;
+  border-bottom: 1px dotted #bdc1c4;
+  text-decoration: none;
+}
+
+.section-link {
+  margin: 1.8em 0 0.6em;
+}
+
+.section-link a {
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(74, 139, 181, 0.4);
+}
+
+.section-link a:hover {
+  border-bottom-color: #4a8bb5;
+}
+
+/* 项目列表：卡片之间留白更清楚 */
+.archive__item {
+  padding-bottom: 0.6em;
+}
+
+.archive__item-title {
+  margin-bottom: 0.35em;
+}
+
+.archive__item-excerpt {
+  font-size: 0.95em;
+}
+
+.archive__item-excerpt p {
+  margin-bottom: 0.4em;
+}
+
+/* 首页正文限制行宽，长条目也不至于拉满整屏 */
+.page__content > p,
+.page__content > ul,
+.page__content > ol,
+.page__content > h2,
+.page__content > h3 {
+  max-width: 48em;
+}
+
+/* 中文正文：优先用系统中文黑体，避免回退到宋体 */
+.page__content {
+  font-feature-settings: "palt";
+}
